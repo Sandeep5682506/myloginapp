@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@android:color/background_light"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bgheader"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:contentDescription="header"
+        android:scaleType="fitXY"
+        android:src="@drawable/header"/>
+    <TextView
+        android:id="@+id/etView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRATION"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="70dp"
+        android:textSize="25dp"
+        android:textColor="@android:color/background_dark"
+        style="@android:style/Animation"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:inputType="text"
+        android:layout_marginTop="110dp"/>
+    <EditText
+        android:id="@+id/userLast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="LastName"
+        android:inputType="text"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/username"/>
+    <EditText
+        android:id="@+id/eMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/userLast"/>
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:inputType="text"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/eMail"/>
+    <EditText
+        android:id="@+id/etMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile"
+        android:inputType="number"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/etAddress"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/etMobile"/>
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Retype Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/password"/>
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/repassword"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_rounded"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Existing user! Go to Sign in page"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/btnsignup"/>
+
+</RelativeLayout>

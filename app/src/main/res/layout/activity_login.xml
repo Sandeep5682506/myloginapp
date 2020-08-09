@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@android:color/background_light"
+    tools:context=".LoginActivity">
+    <ImageView
+        android:id="@+id/bgheader"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:contentDescription="header"
+        android:scaleType="fitXY"
+        android:src="@drawable/header"/>
+    <TextView
+        android:id="@+id/etLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="150dp"
+        android:layout_marginTop="120dp"
+        android:textSize="25dp"
+        android:textColor="@android:color/background_dark"
+        style="@android:style/Animation"/>
+
+
+    <EditText
+        android:id="@+id/etMail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="  Email"
+        android:background="@drawable/bg_outline_rectange"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_person_24"
+        android:layout_marginTop="220dp"/>
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_outline_rectange"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_lock_24"
+        android:layout_below="@+id/etMail"/>
+
+    <Button
+        android:id="@+id/btnsignin1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password1"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_rounded"
+        android:text="Sign in" />
+    <TextView
+        android:id="@+id/btnforgett"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btnsignin1"
+        android:text="Forget Password"/>
+</RelativeLayout>
